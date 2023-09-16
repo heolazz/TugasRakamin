@@ -59,3 +59,24 @@ function updatePendaftarTable() {
     });
 }
 
+// Fungsi untuk menghitung rata-rata umur dan uang saku
+function hitungRataRata() {
+    const avgUmurElement = document.getElementById("avgUmur");
+    const avgUangSakuElement = document.getElementById("avgUangSaku");
+
+    if (pendaftar.length > 0) {
+        const totalUmur = pendaftar.reduce((sum, pendaftar) => sum + pendaftar.umur, 0);
+        const totalUangSaku = pendaftar.reduce((sum, pendaftar) => sum + pendaftar.uangSaku, 0);
+
+        const avgUmur = totalUmur / pendaftar.length;
+        const avgUangSaku = totalUangSaku / pendaftar.length;
+
+        avgUmurElement.innerText = avgUmur.toFixed(2);
+        avgUangSakuElement.innerText = avgUangSaku.toFixed(2);
+    } else {
+        avgUmurElement.innerText = "0";
+        avgUangSakuElement.innerText = "0";
+    }
+}
+
+   
