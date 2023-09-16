@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,800;1,100&display=swap');
+:root{
+    --yellow:#eacf4f;
+    --white:#fff;
+    --black:#000;
+    --light-color:#aaa;
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+::selection{
+    background: var(--yellow);
+    color: var(--white);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: #f7f7f7;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--yellow);
+    color: var(--yellow);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: .5rem;
+    mask-position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    color: var(--white);
+    background:var(--yellow);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background: var(--white);
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--yellow)
+}
+
+.home{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url(image/Image1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    color: #fff;
+}
+
+.home .content span{
+    font-size: 8.5rem;
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color: #f7f7f7;
+    padding: 1rem 0;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+
+.home .image img{
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+.logo {
+    color: inherit;
+    text-decoration: none;
+}
+
+.destination{
+    position: relative;
+}
+
+.destination .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.destination .box-container .box{
+    padding: 2rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 30rem;
+    position: relative;
+}
+
+.destination .box-container .box img{
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.destination .box-container .box h3{
+    color: #666;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.galeri{
+    position: relative;
+}
+
+.galeri .sub-judul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    color: #666;
+    font-size: 20px;
+}
+
+.galeri .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.galeri .box-container .box{
+    padding: .5rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 30rem;
+    position: relative;
+}
+
+.galeri .box-container .box img{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+}
+
