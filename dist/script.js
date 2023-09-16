@@ -78,3 +78,7 @@ function hitungRataRata() {
         avgUangSakuElement.innerText = "0";
     }
 }
+
+// Set default tab saat halaman dimuat
+document.getElementsByClassName("tablinks")[0].click();
+   
