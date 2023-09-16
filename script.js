@@ -41,5 +41,21 @@ function validateAndSubmit() {
     hitungRataRata();
 }
 
+// Fungsi untuk mengupdate tabel pendaftar
+function updatePendaftarTable() {
+    const table = document.getElementById("pendaftarTable");
+    const tbody = table.getElementsByTagName("tbody")[0];
+    tbody.innerHTML = "";
 
-   
+    pendaftar.forEach((pendaftar) => {
+        const row = tbody.insertRow();
+        const cellNama = row.insertCell(0);
+        const cellUmur = row.insertCell(1);
+        const cellUangSaku = row.insertCell(2);
+
+        cellNama.innerText = pendaftar.nama;
+        cellUmur.innerText = pendaftar.umur;
+        cellUangSaku.innerText = pendaftar.uangSaku;
+    });
+}
+
