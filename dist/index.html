@@ -72,22 +72,21 @@
     
 
     <div id="Registrasi" class="tabcontent">
-        <h2 class="mb-4 text-white text-center text-2xl font-bold">Form Registrasi</h2>
-        <br>
-        <form class="mx-64 p-5 rounded-3xl" id="registrationForm">
-          <div class="relative z-0 w-full mb-0 group">
+        <h2 class="mb-5 text-white text-center text-2xl font-bold">Form Registrasi</h2>
+        <form class="bg-white bg-opacity-10 mx-64 p-5 rounded-3xl" id="registrationForm">
+          <div class="relative z-0 w-full px-10 mb-0 group">
             <label class="font-semibold text-gray-200" for="nama">Nama:</label>
-            <input class="block bg-black bg-opacity-60 py-2.5 px-2 w-full text-sm text-white placeholder-gray-400 border-0 border-b-2 border-gray-300 hover:border-gray-50 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 rounded-md shadow-xl peer" type="text" id="nama" name="nama" required minlength="10" placeholder="Minimal 10 Karakter"><br><br>
+            <input class="block mt-2 bg-black bg-opacity-60 py-2.5 px-2 w-full text-sm text-white placeholder-gray-400 border-0 border-b-2 border-gray-300 hover:border-gray-50 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 rounded-md shadow-xl peer" type="text" id="nama" name="nama" required minlength="10" placeholder="Minimal 10 Karakter"><br><br>
           </div>
-          <div class="relative z-0 w-full mb-0 group">
+          <div class="relative z-0 w-full px-10 mb-0 group">
             <label class="font-semibold text-white" for="umur">Umur:</label>
             <input class="block bg-black bg-opacity-60  py-2.5 px-2 w-full text-sm text-white placeholder-gray-400 border-0 border-b-2 border-gray-300 hover:border-gray-50 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 shadow-xl rounded-md peer" type="number" id="umur" name="umur" required min="25" placeholder="Minimal 25 tahun"><br><br>
           </div>
-          <div class="relative z-0 w-full mb-0 group">
+          <div class="relative z-0 w-full px-10 mb-0 group">
             <label class="font-semibold text-white" for="uangSaku">Uang Saku:</label>
             <input class="block bg-black bg-opacity-60 py-2.5 px-2 w-full text-sm text-white placeholder-gray-400 border-0 border-b-2 border-gray-300 hover:border-gray-50 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 shadow-xl rounded-md peer" type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100K - 1Jt"><br><br>
           </div>
-            <button class="text-gray-900 bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:bg-yellow-400 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 uppercase shadow-xl" type="button" onclick="validateAndSubmit()">Submit</button>
+            <button class="mx-10 text-gray-900 bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:bg-yellow-400 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 uppercase shadow-xl" type="button" onclick="validateAndSubmit()">Submit</button>
         </form>
     </div>
 
@@ -95,6 +94,7 @@
         <h2 class="mb-8 text-white text-center text-2xl font-bold dark:text-white" >List Pendaftar</h2>
         <p class="mb-6 text-center text-lg font-normal text-gray-200 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-100">Rata-rata pendaftar memiliki uang saku sebesar <span class="bg-black bg-opacity-60 px-2 py-1.5 rounded-t text-sm text-white border-b-2 font-semibold" >Rp. <span class="py-0.3 px-1" id="avgUangSaku">0</span></span> 
             dengan rata-rata umur <span class="bg-black bg-opacity-60 px-2 py-1.5 text-sm rounded-t-md text-white border-b-2 font-semibold" ><span class="py-0.3 px-1" id="avgUmur">0</span></span> Tahun </p>
+        
         <table id="pendaftarTable" class="w-4/6 mx-52 text-sm text-left text-gray-500 dark:text-gray-400 shadow-lg">
             <thead class="text-xs bg-yellow-500 border-b-2 rounded-3xl border-gray-200 text-gray-900 uppercase dark:text-gray-400">
                 <tr>
