@@ -10,7 +10,7 @@
 
     </style>
 </head>
-<body class="min-h-screen items-center ">
+<body class="min-h-screen items-center bg-blue-700">
     <!-- <div class="max-w-3xl"></div>
      <div class="max-w-3xl mx-auto px-8 sm:px-0">
         <div class="sm:w-7/12 sm:mx-auto">
@@ -55,13 +55,13 @@
      </div> -->
 
 
-    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+    <div class="mb-4 ">
+        <ul class="flex flex-wrap  -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
             <li class="mr-2" role="presentation">
-                <button class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" onclick="openTab(event, 'Registrasi')">Registrasi</button>            
+                <button class="tablinks inline-block p-4 border-b-2 border-collapse rounded-tr-xl text-white bg-blue-700 hover:bg-blue-800  hover:border-gray-300 " onclick="openTab(event, 'Registrasi')">Registrasi</button>            
             </li>
             <li class="mr-2" role="presentation">
-                <button class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" onclick="openTab(event, 'ListPendaftar')">List Pendaftar</button>
+                <button class="tablinks inline-block p-4 border-b-2 border-collapse rounded-tr-xl text-white bg-blue-700 hover:bg-blue-800  hover:border-gray-300 " onclick="openTab(event, 'ListPendaftar')">List Pendaftar</button>
             </li>
         </ul>
     </div>
@@ -69,7 +69,7 @@
     
 
     <div id="Registrasi" class="tabcontent">
-        <h2 class="mb-4 text-center text-2xl font-bold">Form Registrasi</h2>
+        <h2 class="mb-4 text-white text-center text-2xl font-bold">Form Registrasi</h2>
         <br>
         <form class="mx-24 bg-white p-5 rounded-3xl " id="registrationForm">
           <div class="relative z-0 w-full mb-6 group">
@@ -89,17 +89,17 @@
     </div>
 
     <div id="ListPendaftar" class="tabcontent">
-        <h2 class="mb-4 text-center text-2xl font-bold dark:text-white" >List Pendaftar</h2>
-        <p class="mb-6 text-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Rata-rata pendaftar memiliki uang saku sebesar <span id="avgUangSaku">0</span> dengan rata-rata umur <span id="avgUmur">0</span></p>
+        <h2 class="mb-4 text-white text-center text-2xl font-bold dark:text-white" >List Pendaftar</h2>
+        <p class="mb-6 text-center text-lg font-normal text-gray-200 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-100">Rata-rata pendaftar memiliki uang saku sebesar <span id="avgUangSaku">0</span> dengan rata-rata umur <span id="avgUmur">0</span></p>
         <table id="pendaftarTable" class="w-4/6 mx-52 text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead class="text-xs bg-gray-100 border-b-2 rounded-3xl border-gray-200 text-gray-900 uppercase dark:text-gray-400">
+            <thead class="text-xs bg-yellow-500 border-b-2 rounded-3xl border-gray-200 text-gray-900 uppercase dark:text-gray-400">
                 <tr>
-                    <th scope="col" class=" p-3 font-semibold tracking-wide text-left">Nama</th>
-                    <th scope="col" class=" p-3 font-semibold tracking-wide text-left">Umur</th>
-                    <th scope="col" class=" p-3 font-semibold tracking-wide text-left">Uang Saku</th>
+                    <th scope="col" class=" p-3.5 font-semibold tracking-wide text-left"><span class="p-1.5 bg-yellow-200 bg-opacity-80 rounded-lg tracking-wider">Nama</span></th>
+                    <th scope="col" class=" p-3.5 font-semibold tracking-wide text-left"><span class="p-1.5 bg-yellow-200 bg-opacity-80 rounded-lg tracking-wider">Umur</span></th>
+                    <th scope="col" class=" p-3.5 font-semibold tracking-wide text-left"><span class="p-1.5 bg-yellow-200 bg-opacity-80 rounded-lg tracking-wider">Uang Saku</span></th>
                 </tr>
             </thead>
-            <tbody class="text-xs bg-gray-600 text-white mx-0 font-medium text-left">
+            <tbody class="text-xs bg-blue-950 text-gray-200 mx-0 font-medium text-left">
             
             </tbody>
         </table>
