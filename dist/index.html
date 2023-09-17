@@ -10,7 +10,7 @@
 
     </style>
 </head>
-<body class="min-h-screen items-center">
+<body class="min-h-screen items-center ">
     <!-- <div class="max-w-3xl"></div>
      <div class="max-w-3xl mx-auto px-8 sm:px-0">
         <div class="sm:w-7/12 sm:mx-auto">
@@ -69,20 +69,20 @@
     
 
     <div id="Registrasi" class="tabcontent">
-        <h2 class="mb-4 text-center text-2x1 font-bold">Form Registrasi</h2>
+        <h2 class="mb-4 text-center text-2xl font-bold">Form Registrasi</h2>
         <br>
-        <form class="mx-10 bg-white p-5 rounded-3xl " id="registrationForm">
+        <form class="mx-24 bg-white p-5 rounded-3xl " id="registrationForm">
           <div class="relative z-0 w-full mb-6 group">
-            <label for="nama">Nama:</label>
-            <input class="block  py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="text" id="nama" name="nama" required minlength="10" placeholder="minimal 10 karakter"><br><br>
+            <label class="font-semibold" for="nama">Nama:</label>
+            <input class="block  py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="text" id="nama" name="nama" required minlength="10" placeholder="Minimal 10 Karakter"><br><br>
           </div>
           <div class="relative z-0 w-full mb-6 group">
-            <label for="umur">Umur:</label>
-            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="umur" name="umur" required min="25" placeholder="minimal 25 tahun"><br><br>
+            <label class="font-semibold" for="umur">Umur:</label>
+            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="umur" name="umur" required min="25" placeholder="Minimal 25 tahun"><br><br>
           </div>
           <div class="relative z-0 w-full mb-6 group">
-            <label for="uangSaku">Uang Saku:</label>
-            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100k - 1jt"><br><br>
+            <label class="font-semibold" for="uangSaku">Uang Saku:</label>
+            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100K - 1Jt"><br><br>
           </div>
             <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" onclick="validateAndSubmit()">Submit</button>
         </form>
@@ -91,15 +91,16 @@
     <div id="ListPendaftar" class="tabcontent">
         <h2 class="mb-4 text-center text-2xl font-bold dark:text-white" >List Pendaftar</h2>
         <p class="mb-6 text-center text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Rata-rata pendaftar memiliki uang saku sebesar <span id="avgUangSaku">0</span> dengan rata-rata umur <span id="avgUmur">0</span></p>
-        <table id="pendaftarTable" class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-900 uppercase dark:text-gray-400">
+        <table id="pendaftarTable" class="w-4/6 mx-52 text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs bg-gray-100 border-b-2 rounded-3xl border-gray-200 text-gray-900 uppercase dark:text-gray-400">
                 <tr>
-                    <th scope="col" class="px-6 py-3">Nama</th>
-                    <th scope="col" class="px-6 py-3">Umur</th>
-                    <th scope="col" class="px-6 py-3">Uang Saku</th>
+                    <th scope="col" class=" p-3 font-semibold tracking-wide text-left">Nama</th>
+                    <th scope="col" class=" p-3 font-semibold tracking-wide text-left">Umur</th>
+                    <th scope="col" class=" p-3 font-semibold tracking-wide text-left">Uang Saku</th>
                 </tr>
             </thead>
-            <tbody class="mx-auto content-center">
+            <tbody class="text-xs bg-gray-600 text-white mx-0 font-medium text-left">
+            
             </tbody>
         </table>
     </div>
