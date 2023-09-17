@@ -10,7 +10,7 @@
 
     </style>
 </head>
-<body class="min-h-screen items-center bg-blue-700">
+<body class="min-h-screen items-center bg-gradient-to-t from-indigo-800 to-blue-700">
     <!-- <div class="max-w-3xl"></div>
      <div class="max-w-3xl mx-auto px-8 sm:px-0">
         <div class="sm:w-7/12 sm:mx-auto">
@@ -71,20 +71,20 @@
     <div id="Registrasi" class="tabcontent">
         <h2 class="mb-4 text-white text-center text-2xl font-bold">Form Registrasi</h2>
         <br>
-        <form class="mx-24 bg-white p-5 rounded-3xl " id="registrationForm">
-          <div class="relative z-0 w-full mb-6 group">
-            <label class="font-semibold" for="nama">Nama:</label>
-            <input class="block  py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="text" id="nama" name="nama" required minlength="10" placeholder="Minimal 10 Karakter"><br><br>
+        <form class="mx-64 p-5 rounded-3xl" id="registrationForm">
+          <div class="relative z-0 w-full mb-0 group">
+            <label class="font-semibold text-gray-200" for="nama">Nama:</label>
+            <input class="block bg-black bg-opacity-60 py-2.5 px-2 w-full text-sm text-white placeholder-gray-400 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 rounded-md shadow-xl peer" type="text" id="nama" name="nama" required minlength="10" placeholder="Minimal 10 Karakter"><br><br>
           </div>
-          <div class="relative z-0 w-full mb-6 group">
-            <label class="font-semibold" for="umur">Umur:</label>
-            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="umur" name="umur" required min="25" placeholder="Minimal 25 tahun"><br><br>
+          <div class="relative z-0 w-full mb-0 group">
+            <label class="font-semibold text-white" for="umur">Umur:</label>
+            <input class="block bg-black bg-opacity-60  py-2.5 px-2 w-full text-sm placeholder-gray-400 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 shadow-xl rounded-md peer" type="number" id="umur" name="umur" required min="25" placeholder="Minimal 25 tahun"><br><br>
           </div>
-          <div class="relative z-0 w-full mb-6 group">
-            <label class="font-semibold" for="uangSaku">Uang Saku:</label>
-            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100K - 1Jt"><br><br>
+          <div class="relative z-0 w-full mb-0 group">
+            <label class="font-semibold text-white" for="uangSaku">Uang Saku:</label>
+            <input class="block bg-black bg-opacity-60 py-2.5 px-2 w-full text-sm placeholder-gray-400 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 shadow-xl rounded-md peer" type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100K - 1Jt"><br><br>
           </div>
-            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" onclick="validateAndSubmit()">Submit</button>
+            <button class="text-gray-900 bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 uppercase shadow-xl" type="button" onclick="validateAndSubmit()">Submit</button>
         </form>
     </div>
 
