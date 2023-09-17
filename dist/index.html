@@ -4,42 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi dan List Pendaftar</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
 </head>
-<body>
+<body class="">
+    <!-- <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <div class="tabs">
         <button class="tablinks" onclick="openTab(event, 'Registrasi')">Registrasi</button>
         <button class="tablinks" onclick="openTab(event, 'ListPendaftar')">List Pendaftar</button>
+    </div> -->
+
+    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2" role="presentation">
+                <button class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" onclick="openTab(event, 'Registrasi')">Registrasi</button>            
+            </li>
+            <li class="mr-2" role="presentation">
+                <button class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" onclick="openTab(event, 'ListPendaftar')">List Pendaftar</button>
+            </li>
+        </ul>
     </div>
+    
+    
 
     <div id="Registrasi" class="tabcontent">
         <h2>Form Registrasi</h2>
+        <br>
         <form id="registrationForm">
+          <div class="relative z-0 w-full mb-6 group">
             <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" required minlength="10" placeholder="minimal 10 karakter"><br><br>
-
+            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="text" id="nama" name="nama" required minlength="10" placeholder="minimal 10 karakter"><br><br>
+          </div>
+          <div class="relative z-0 w-full mb-6 group">
             <label for="umur">Umur:</label>
-            <input type="number" id="umur" name="umur" required min="25" placeholder="minimal 25 tahun"><br><br>
-
+            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="umur" name="umur" required min="25" placeholder="minimal 25 tahun"><br><br>
+          </div>
+          <div class="relative z-0 w-full mb-6 group">
             <label for="uangSaku">Uang Saku:</label>
-            <input type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100k - 1jt"><br><br>
-
-            <button type="button" onclick="validateAndSubmit()">Submit</button>
+            <input class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" type="number" id="uangSaku" name="uangSaku" required min="100000" max="1000000" placeholder="100k - 1jt"><br><br>
+          </div>
+            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" onclick="validateAndSubmit()">Submit</button>
         </form>
     </div>
 
     <div id="ListPendaftar" class="tabcontent">
         <h2>List Pendaftar</h2>
         <p>Rata-rata pendaftar memiliki uang saku sebesar <span id="avgUangSaku">0</span> dengan rata-rata umur <span id="avgUmur">0</span></p>
-        <table id="pendaftarTable">
-            <thead>
+        <table id="pendaftarTable" class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-900 uppercase dark:text-gray-400">
                 <tr>
-                    <th>Nama</th>
-                    <th>Umur</th>
-                    <th>Uang Saku</th>
+                    <th scope="col" class="px-6 py-3">Nama</th>
+                    <th scope="col" class="px-6 py-3">Umur</th>
+                    <th scope="col" class="px-6 py-3">Uang Saku</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+            </tbody>
         </table>
     </div>
 
