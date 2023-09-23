@@ -18,3 +18,21 @@ SELECT barang.nama_barang, barang.harga, kategori_barang.nama_kategori
 FROM barang
 INNER JOIN kategori_barang 
 ON barang.kategori_id = kategori_barang.id;
+
+-- Query Insert data barang
+INSERT INTO barang (nama_barang, harga, kategori_id) VALUES 
+('Lato-lato', 50.00, 1);
+('Mobil Balap', 39.99, 2),
+('Puzzle Abjad', 9.99, 3);
+
+
+-- Query Select data barang
+SELECT * FROM barang;
+
+-- Query Update data barang
+UPDATE barang
+SET harga = 55.00
+WHERE id = 1;
+
+
+
