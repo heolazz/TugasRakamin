@@ -13,3 +13,8 @@ CREATE TABLE kategori_barang (
   nama_kategori VARCHAR(255)
 );
 
+-- Relasi Table
+SELECT barang.nama_barang, barang.harga, kategori_barang.nama_kategori
+FROM barang
+INNER JOIN kategori_barang 
+ON barang.kategori_id = kategori_barang.id;
