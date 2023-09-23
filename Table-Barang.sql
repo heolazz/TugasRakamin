@@ -34,5 +34,15 @@ UPDATE barang
 SET harga = 55.00
 WHERE id = 1;
 
+-- Query Insert data kategori_barang
+INSERT INTO kategori_barang (nama_kategori)
+VALUES ('Mainan Puzzle');
 
+-- Query Select data kategori_barang
+SELECT * FROM kategori_barang;
+
+-- Query Update data kategori_barang
+UPDATE kategori_barang
+SET nama_kategori = 'Mainan Elektronik'
+WHERE id = 1;
 
