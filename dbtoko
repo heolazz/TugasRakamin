@@ -22,7 +22,9 @@ ON barang.kategori_id = kategori_barang.id;
 -- Query Insert data barang
 INSERT INTO barang (nama_barang, harga, kategori_id) VALUES 
 ('Lato-lato', 50.00, 1);
+INSERT INTO barang (nama_barang, harga, kategori_id) VALUES
 ('Mobil Balap', 39.99, 2),
+INSERT INTO barang (nama_barang, harga, kategori_id) VALUES
 ('Puzzle Abjad', 9.99, 3);
 
 
