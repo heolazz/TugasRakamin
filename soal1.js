@@ -26,6 +26,10 @@ const rl = readline.createInterface({
     const rectangleArea = modul.calculateRectangleArea(parseFloat(length), parseFloat(width));
     const rectanglePerimeter = modul.calculateRectanglePerimeter(parseFloat(length), parseFloat(width));
 
+    // Menampilkan Hasil Perhitungan Luas dan Kelilig Persegi Panjang
+    console.log(`Luas persegi panjang dengan panjang ${length} dan lebar ${width} adalah ${rectangleArea}`);
+    console.log(`Keliling persegi panjang dengan panjang ${length} dan lebar ${width} adalah ${rectanglePerimeter}`);
+
     });
   });
 });
