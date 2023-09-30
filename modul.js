@@ -14,4 +14,7 @@
     return length * width;
   }
   
- 
+  // Fungsi untuk menghitung keliling persegi panjang
+  function calculateRectanglePerimeter(length, width) {
+    return 2 * (length + width);
+  }
