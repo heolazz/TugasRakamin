@@ -6,3 +6,8 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
+
+    // Mengambil input dari user
+    rl.question('Masukkan panjang sisi persegi: ', (side) => {
+   
+});
