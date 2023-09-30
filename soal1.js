@@ -9,5 +9,8 @@ const rl = readline.createInterface({
 
     // Mengambil input dari user
     rl.question('Masukkan panjang sisi persegi: ', (side) => {
-   
+    // Menghitung luas dan keliling persegi
+    const squareArea = modul.calculateSquareArea(parseFloat(side));
+    const squarePerimeter = modul.calculateSquarePerimeter(parseFloat(side));
+
 });
