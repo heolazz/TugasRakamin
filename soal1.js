@@ -22,6 +22,10 @@ const rl = readline.createInterface({
     rl.question('Masukkan panjang persegi panjang: ', (length) => {
     rl.question('Masukkan lebar persegi panjang: ', (width) => {
 
+    // Menghitung luas dan keliling persegi panjang
+    const rectangleArea = modul.calculateRectangleArea(parseFloat(length), parseFloat(width));
+    const rectanglePerimeter = modul.calculateRectanglePerimeter(parseFloat(length), parseFloat(width));
+
     });
   });
 });
