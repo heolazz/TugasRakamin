@@ -18,3 +18,11 @@
   function calculateRectanglePerimeter(length, width) {
     return 2 * (length + width);
   }
+  // Export fungsi-fungsi agar bisa digunakan di luar modul
+  module.exports = {
+    calculateSquareArea,
+    calculateSquarePerimeter,
+    calculateRectangleArea,
+    calculateRectanglePerimeter,
+  };
+  
