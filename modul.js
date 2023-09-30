@@ -9,4 +9,9 @@
     return 4 * side;
   }
   
+  // Fungsi untuk menghitung luas persegi panjang
+  function calculateRectangleArea(length, width) {
+    return length * width;
+  }
   
+ 
