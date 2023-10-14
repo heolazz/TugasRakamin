@@ -13,3 +13,27 @@ router.get('/', function(req, res){
         }
     })
 })
+
+// Get list film based on category
+router.get('/:category', (req, res) => {
+    const categoryName = req.params.category;
+    const query = {
+        text: 'SELECT f* FROM category c ' +
+              'JOIN film f ' +
+              'ON c.category_id = f.category_id ' +
+              'WHERE c.name = $1',
+        values: [categoryName],
+    };
+
+    pool.query(query, (err, result) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('Internal Server Error');
+        } else {
+            res.json(result.rows);
+        }
+    });
+});
+
+
+module.exports = router
