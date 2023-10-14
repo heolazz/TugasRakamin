@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "nodemon index.js",
+    "seed" : "node seeding/seeding.js",
+    "create-migration": "db-migrate create initialization --sql-file --",
+    "migrate-up": "db-migrate up",
+    "migrate-down": "db-migrate down"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3"
+  }
+}
